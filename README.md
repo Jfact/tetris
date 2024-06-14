@@ -1,27 +1,54 @@
-# NgTetris
+Tetris Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+This project is a simple implementation of the classic Tetris game using Angular and TypeScript.
 
-## Development server
+Setup:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone the repository:
+   git clone https://github.com/your-username/tetris-game.git
 
-## Code scaffolding
+2. Install dependencies:
+   cd tetris-game
+   npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Run the development server:
+   ng serve
 
-## Build
+   Open your browser and navigate to http://localhost:4200/ to play the Tetris game.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Features:
 
-## Running unit tests
+- Basic Tetris gameplay mechanics.
+- Pieces drop automatically with increasing speed.
+- Controls:
+    - Left Arrow: Move piece left.
+    - Right Arrow: Move piece right.
+    - Down Arrow: Drop piece faster.
+    - Q/W: Rotate piece counterclockwise/clockwise.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+How to Play:
 
-## Running end-to-end tests
+- Use the arrow keys to move and rotate pieces to create horizontal lines without gaps.
+- When a line is completed, it will disappear, and you will earn points.
+- The game ends when the pieces stack up to the top of the screen.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Folder Structure:
 
-## Further help
+- src/app/tetris/: Contains the Tetris game component files.
+    - tetris.component.ts: TypeScript logic for the Tetris game.
+    - tetris.component.html: HTML template for the Tetris game.
+    - tetris.component.css: CSS styles for the Tetris game.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Technologies Used:
+
+- Angular: Frontend framework for building the application.
+- TypeScript: Programming language for writing scalable web applications.
+- HTML5 Canvas: Used for rendering the game graphics and animations.
+
+Contributing:
+
+Contributions are welcome! Please fork the repository and create a pull request with your improvements.
+
+License:
+
+This project is licensed under the MIT License - see the LICENSE file for details.
